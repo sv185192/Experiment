@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-class App extends React.Component {
+import App from './App';
+class App2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,8 +29,9 @@ class App extends React.Component {
     return (
       <div>
         {this.state.date.toISOString()}
+        <App/>
       </div>
     )
   }
 }
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App2/>, document.getElementById('root'));
